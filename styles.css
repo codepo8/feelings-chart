@@ -31,12 +31,9 @@ ul, li {
 }
 ul {
   font-size: .8em;
-
 }
 ul ul {
   font-size: 1em;
-}
-ul>li{
 }
 ul ul li {
   display: block;
