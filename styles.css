@@ -55,8 +55,10 @@ ul ul ul li:last-child::after {
   content:'.';
 }
 .hidden {
-  border: 2px solid yellow;
   display: none;
+}
+.nojs .hidden {
+    display: inline-block;
 }
 .nojs ul {
   margin-bottom: .2em;
