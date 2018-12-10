@@ -1,0 +1,75 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-size: calc(1em + 1vw);
+  margin: 1em 1em 3em 1em;
+}
+h1 {
+  font-size: 100%;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #000;
+}
+p {
+  font-size: .8em;
+}
+button {
+  font-size: 1em;
+  margin: .2em .5em;
+  display: inline-block;
+  border: none;
+  background: transparent;
+  color: darkslategray;
+}
+button::after {
+  content: '>';
+}
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+ul {
+  font-size: .8em;
+
+}
+ul ul {
+  font-size: 1em;
+}
+ul>li{
+}
+ul ul li {
+  display: block;
+  margin-left: 1em;
+}
+ul ul ul {
+  display: inline;
+}
+ul ul ul li {
+  display: inline;
+  margin: 0;
+}
+ul ul ul li::after {
+  content:',';
+}
+ul ul ul li:last-child::after {
+  content:'.';
+}
+.hidden {
+  border: 2px solid yellow;
+  display: none;
+}
+.nojs ul {
+  margin-bottom: .2em;
+  color: darkslategray; 
+}
+.nojs ul ul {
+  margin-top: .2em;
+  color: #333;
+  float: none;
+}
+.nojs ul ul ul {
+  color: #999;
+}  
+.nojs ul ul ul::before {
+  content: ':';
+}
