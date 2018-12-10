@@ -12,6 +12,21 @@ h1 {
 p {
   font-size: .8em;
 }
+
+footer {
+    display: block;
+    color: #ccc;
+    font-size: 80%;
+    margin-top: 2em;
+    border-top: 1px solid #999;
+}
+footer a {
+    color: #aaa;
+}
+footer p {
+    margin: .5em;
+}
+
 button {
   font-size: 1em;
   margin: .2em .5em;
@@ -55,6 +70,7 @@ ul ul ul li:last-child::after {
 .hidden {
   display: none;
 }
+
 .nojs .hidden {
     display: inline-block;
 }
@@ -72,18 +88,4 @@ ul ul ul li:last-child::after {
 }  
 .nojs ul ul ul::before {
   content: ':';
-}
-
-footer {
-    display: block;
-    color: #ccc;
-    font-size: 80%;
-    margin-top: 2em;
-    border-top: 1px solid #999;
-}
-footer a {
-    color: #aaa;
-}
-footer p {
-    margin: .5em;
 }
