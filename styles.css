@@ -27,6 +27,7 @@ ul, li {
   list-style: none;
   margin: 0;
   padding: 0;
+  text-transform: lowercase;
 }
 ul {
   font-size: .8em;
