@@ -73,3 +73,17 @@ ul ul ul li:last-child::after {
 .nojs ul ul ul::before {
   content: ':';
 }
+
+footer {
+    display: block;
+    color: #ccc;
+    font-size: 80%;
+    margin-top: 2em;
+    border-top: 1px solid #999;
+}
+footer a {
+    color: #aaa;
+}
+footer p {
+    margin: .5em;
+}

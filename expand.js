@@ -2,7 +2,18 @@
     document.body.classList = '';
     let toggle = (ev) => {
         let te = ev.target.parentNode.querySelector('ul');
-        te.className = (te.className === 'hidden') ? '' : 'hidden';
+        if (te.className === 'hidden') {
+            te.className = '';
+            if (te.querySelector('button')) {
+                te.querySelector('button').focus();
+            } else {
+                te.tabIndex = 1;
+                te.focus();
+            }
+        } else {
+            te.className = 'hidden';
+            te.tabIndex = -1;
+        }
         ev.preventDefault();
     };
     let createButton = function(elm) {
